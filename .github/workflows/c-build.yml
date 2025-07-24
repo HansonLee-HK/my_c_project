@@ -1,0 +1,29 @@
+name: C Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install CMake & GCC
+      run: sudo apt update && sudo apt install -y cmake gcc
+    - name: Configure (Release)
+      run: |
+        mkdir build
+        cd build
+        cmake -DCMAKE_BUILD_TYPE=Release ..
+    - name: Build
+      run: |
+        cd build
+        cmake --build .
+    - name: Run tests (if any)
+      run: |
+        # 如果你以后添加了 test，可放在这里
+        echo "No tests configured yet."
