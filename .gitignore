@@ -1,0 +1,8 @@
+# 忽略 CMake 生成的文件夹
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/*.cmake
+/*.o
+/*.out
+#/Makefile
