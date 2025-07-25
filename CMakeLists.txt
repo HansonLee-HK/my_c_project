@@ -5,4 +5,7 @@ set(CMAKE_C_STANDARD 99)
 
 include_directories(include)
 
-add_executable(my_c_project main.c src/hello.c)
+add_executable(my_c_project main.c 
+		src/hello.c
+		src/test.c
+)
