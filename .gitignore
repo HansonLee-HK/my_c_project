@@ -1,6 +1,7 @@
 # 忽略 CMake 生成的文件夹
 /build/
 /build_test/
+/build_test1/
 /CMakeFiles/
 /CMakeCache.txt
 /*.cmake

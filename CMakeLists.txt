@@ -14,4 +14,5 @@ include_directories(include)
 add_executable(my_c_project main.c 
 		src/hello.c
 		src/test.c
+		src/test1.c
 )
