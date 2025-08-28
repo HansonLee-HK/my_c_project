@@ -16,3 +16,7 @@ add_executable(my_c_project main.c
 		src/test.c
 		src/test1.c
 )
+
+#编译器连接数学函数
+target_link_libraries(my_c_project m)
+
